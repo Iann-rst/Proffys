@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import logoImg from '../../assets/images/logo.svg';
 import backIcon from '../../assets/images/icons/back.svg';
 
+/* Arquivo de estilização*/
+import './styles.css';
+
 interface PageHeaderProps {
   title: string;
 }
@@ -20,6 +23,9 @@ const PageHeader: React.FC<PageHeaderProps> = (props) =>{
 
     <div className="header-content">
       <strong>{props.title}</strong>
+
+      {/*Recebendo o formulário da TeacherList por props */}
+    {props.children}
     </div>
   </header>
   );
