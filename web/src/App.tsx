@@ -1,5 +1,8 @@
 import React from 'react';
 
+/* Arquivo de estilização */
+import './assets/styles/global.css';
+
 function App() {
   return (
     <h1>Hello World!</h1>
