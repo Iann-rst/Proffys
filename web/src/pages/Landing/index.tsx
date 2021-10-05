@@ -1,5 +1,6 @@
 import React from 'react';
 
+/*Arquivo de estilização da landing page */
 import './styles.css';
 
 import logoImg from '../../assets/images/logo.svg';
