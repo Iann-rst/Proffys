@@ -5,13 +5,13 @@
   ### Criando projeto do servidor:
 
   * Cria um package.json para as dependências do projeto:
-      yarn init -y
+      * yarn init -y
   * Vai ser o primeiro arquivo aberto quando precisar executar o servidor:
-      src/server.ts:
+      * src/server.ts:
   * Cria o arquivo tsconfig.json:
-      yarn tsc -init:
+      * yarn tsc -init:
   * executa o servidor e fica observando se há alguma alteração, para pode reiniciar o servidor:
-      yarn add ts-node-dev -D:
+      * yarn add ts-node-dev -D:
       
 
   ### Rotas e recursos:
