@@ -36,17 +36,17 @@
   * Query Params: Paginação, filtros, ordenação.
 
   ### Identificando casos de uso:
-    #### Funcionalidades
-      ##### Conexões
+  #### Funcionalidades
+  ##### Conexões
       
-      - Rota para listar o total de conexões realizadas;
-      - Rota para criar uma nova conexão (entre aluno e professor);
+  - Rota para listar o total de conexões realizadas;
+  - Rota para criar uma nova conexão (entre aluno e professor);
+
+  ##### Aulas
       
-      ##### Aulas
-      
-      - Rota para criar uma aula;
-      - Rota para listar aulas;
-        - Filtrar por matéria, dia da semana e horário;
+  - Rota para criar uma aula;
+  - Rota para listar aulas;
+  - Filtrar por matéria, dia da semana e horário;
 
   ### Configurando conexão com o Banco.
 
