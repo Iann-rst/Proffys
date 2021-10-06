@@ -17,7 +17,7 @@
   ### Rotas e recursos:
 
   1. Rotas: Cada rota é um endereço da nossa aplicação:
-    * Rota para listar usuários:
+    1. Rota para listar usuários:
       * http://localhost:3333/users
   2. Recursos: O que vem depois da url base:
       * https://localhost:3333/users (/users é o recurso)
