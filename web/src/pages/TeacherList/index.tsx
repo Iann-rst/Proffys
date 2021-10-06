@@ -1,4 +1,5 @@
 import React from 'react';
+import Input from '../../components/Input';
 import PageHeader from '../../components/PageHeader';
 import TeacherItem from '../../components/TeacherItem';
 
@@ -8,24 +9,21 @@ import './styles.css';
 function TeacherList(){
   return(
     <div id="page-teacher-list" className="container">
+      {/* Componente PageHeader (Header da página) 
+      *** title (props)
+      */}
       <PageHeader title="Estes são os proffys disponíveis.">
+
         {/*Passando o formulário como props.children para o componente PageHeader*/}
         <form id="search-teachers">
-          <div className="input-block">
-            <label htmlFor="subject">Matérias</label>
-            <input type="text" id="subject"/>
-          </div>
-          <div className="input-block">
-            <label htmlFor="week_day">Dia da semana</label>
-            <input type="text" id="week_day"/>
-          </div>
-          <div className="input-block">
-            <label htmlFor="time">Hora</label>
-            <input type="text" id="time"/>
-          </div>
+          {/* Utilizando componente Input, para representar os inputs do formulário*/}
+          <Input name="subject" label="Matéria"/>
+          <Input name="week_day" label="Dia da semana"/>
+          <Input type="time" name="time" label="Hora"/>
         </form>
       </PageHeader>
-
+      
+      {/* Listagem dos proffys */}
       <main>
         <TeacherItem/>
         <TeacherItem/>
