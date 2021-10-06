@@ -2,17 +2,17 @@
   
   ## Passo a Passo
 
-  ### Criando projeto do servidor.
-    1. yarn init -y: 
-        * Cria um package.json para as dependências do projeto.
-    2. src/server.ts:
-        * Vai ser o primeiro arquivo aberto quando precisar executar o servidor.
-    3. yarn tsc -init:
-        * Cria o arquivo tsconfig.json.
-    4. yarn add ts-node-dev -D:
-        * executa o servidor e fica observando se há alguma alteração, para pode reiniciar o servidor.
+  ### Criando projeto do servidor:
+    1.yarn init -y: 
+      *Cria um package.json para as dependências do projeto.
+    2.src/server.ts:
+      *Vai ser o primeiro arquivo aberto quando precisar executar o servidor.
+    3.yarn tsc -init:
+      *Cria o arquivo tsconfig.json.
+    4.yarn add ts-node-dev -D:
+      *executa o servidor e fica observando se há alguma alteração, para pode reiniciar o servidor.
   
-  ### Rotas e recursos.
+  ### Rotas e recursos:
     1. Rotas: Cada rota é um endereço da nossa aplicação:
       Rota para listar usuários:
       * http://localhost:3333/users
