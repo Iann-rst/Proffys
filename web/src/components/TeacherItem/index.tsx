@@ -1,6 +1,7 @@
 import React from 'react';
 
 import whatsappIcon from '../../assets/images/icons/whatsapp.svg';
+import api from '../../services/api';
 
 /*Arquivo de Estilização */
 import './styles.css';
@@ -22,6 +23,14 @@ interface TeacherItemProps{
 }
 
 function TeacherItem({teacher}: TeacherItemProps){
+
+  /* Cria a conexão entre aluno e professor, assim que clicar no button do whatsapp */
+  function createNewConnection(){
+    api.post('connections', {
+      user_id: teacher.id,
+    });
+  }
+
   return(
     <article className="teacher-item">
       <header>
@@ -38,7 +47,7 @@ function TeacherItem({teacher}: TeacherItemProps){
             Preço/hora
             <strong>R$ {teacher.cost}</strong>
           </p>
-          <a href={`https://wa.me/${teacher.whatsapp}`}>
+          <a target="_blank" rel="noopener noreferrer" onClick={createNewConnection} href={`https://wa.me/${teacher.whatsapp}`}>
             <img src={whatsappIcon} alt="whatsapp" />
             Entrar em contato.
           </a>
