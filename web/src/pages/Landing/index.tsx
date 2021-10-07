@@ -18,7 +18,9 @@ function Landing(){
 
   const [totalConnections, setTotalConnections] = useState(0);
 
+  //executado quando o componente é montado
   useEffect(()=>{
+    //Pegando o total de conexões da API (banco de dados)
     api.get('connections').then(response =>{
       const {total} = response.data;
 
